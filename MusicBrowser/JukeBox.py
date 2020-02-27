@@ -22,6 +22,11 @@ class Scrollbar(tkinter.Listbox):
         self['yscrollcommand'] = self.scrollbar.set
 
 
+def get_albums(event):
+    lb = event.widget
+
+
+
 mainWindow = tkinter.Tk()
 mainWindow.title('Music DB Browser')
 mainWindow.geometry('1080x768')
@@ -42,9 +47,14 @@ tkinter.Label(mainWindow, text='Albums').grid(row=0, column=1)
 tkinter.Label(mainWindow, text='Songs').grid(row=0, column=2)
 
 # =========Artists ListBox========
-artistList = tkinter.Listbox(mainWindow)
+artistList = Scrollbar(mainWindow)
 artistList.grid(row=1, column=0, sticky='nsew', rowspan=2, padx=(30, 0))
 artistList.config(border=2, relief='sunken')
+
+for artist in conn.execute("select artists.name from artists order by artists.name"):
+    artistList.insert(tkinter.END, artist[0])
+
+artistList.bind('<<ListboxSelect>>', get_albums)
 
 # artistScroll = tkinter.Scrollbar(mainWindow, orient=tkinter.VERTICAL, command=artistList.yview())
 # artistScroll.grid(row=1, column=0, sticky='nse', rowspan=2)
