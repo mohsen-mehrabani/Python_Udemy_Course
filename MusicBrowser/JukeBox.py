@@ -5,13 +5,12 @@ try:
 except ImportError:  # python2
     import Tkinter as tkinter
 
-conn = sqlite3.connect("music.db")
+conn = sqlite3.connect("music.sqlite")
 
 
 class Scrollbar(tkinter.Listbox):
     def __init__(self, windows, **kwargs):
-        # for Python 2
-        # tkinter.Listbox.__init__(self, windows, **kwargs)
+        # tkinter.Listbox.__init__(self, windows, **kwargs)     # for Python 2
         super().__init__(windows, **kwargs)
         self.scrollbar = tkinter.Scrollbar(windows, orient=tkinter.VERTICAL, command=self.yview)
 
@@ -84,6 +83,3 @@ mainWindow.mainloop()
 print("Closing database connection")
 
 conn.close()
-
-# This is an exercise for synchronise with gtihub
-
