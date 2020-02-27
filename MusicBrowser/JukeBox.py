@@ -1,7 +1,8 @@
 import sqlite3
+
 try:
     import tkinter
-except ImportError:     # python2
+except ImportError:  # python2
     import Tkinter as tkinter
 
 conn = sqlite3.connect("music.db")
@@ -29,7 +30,7 @@ mainWindow.geometry('1080x768')
 mainWindow.columnconfigure(0, weight=2)
 mainWindow.columnconfigure(1, weight=2)
 mainWindow.columnconfigure(2, weight=2)
-mainWindow.columnconfigure(3, weight=1)     # spacer column in right
+mainWindow.columnconfigure(3, weight=1)  # spacer column in right
 
 mainWindow.rowconfigure(0, weight=1)
 mainWindow.rowconfigure(1, weight=5)
@@ -82,3 +83,6 @@ songLV.set(tuple(testList))
 mainWindow.mainloop()
 print("Closing database connection")
 conn.close()
+
+# This is an exercise for synchronise with gtihub
+
