@@ -24,7 +24,15 @@ class Scrollbar(tkinter.Listbox):
 
 def get_albums(event):
     lb = event.widget
+    index = lb.curselection()[0]
+    artist_name = lb.get(index),
 
+    # get the artist ID from the database row
+    artist_id = conn.execute("SELECT artists._id FROM artists WHERE artists.name = ?", artist_name).fetchone()
+    alist = []
+    for row in conn.execute("SELECT albums.name FROM albums WHERE albums.artist = ? ORDER BY albums.name", artist_id ):
+        alist.append(row[0])
+    albumLV.set(tuple(alist))
 
 
 mainWindow = tkinter.Tk()
@@ -85,9 +93,9 @@ songsList.config(border=2, relief='sunken')
 # songsList['yscrollcommand'] = songScroll.set
 
 # ========MainLoop===============
-testList = range(1, 100)
-albumLV.set(tuple(testList))
-songLV.set(tuple(testList))
+# testList = range(1, 100)
+# albumLV.set(tuple(testList))
+# songLV.set(tuple(testList))
 
 mainWindow.mainloop()
 print("Closing database connection")
