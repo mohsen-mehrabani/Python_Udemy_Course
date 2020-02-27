@@ -82,6 +82,7 @@ songLV.set(tuple(testList))
 
 mainWindow.mainloop()
 print("Closing database connection")
+# This is an exercise for synchronise with gtihub
 conn.close()
 
 # This is an exercise for synchronise with gtihub
