@@ -33,6 +33,7 @@ def get_albums(event):
     for row in conn.execute("SELECT albums.name FROM albums WHERE albums.artist = ? ORDER BY albums.name", artist_id):
         alist.append(row[0])
     albumLV.set(tuple(alist))
+    songLV.set(("Choose an album",))
 
 
 def get_songs(event):
@@ -92,7 +93,7 @@ songsList = Scrollbar(mainWindow, listvariable=songLV)
 songsList.grid(row=1, column=2, sticky='nsew', padx=(30, 0))
 songsList.config(border=2, relief='sunken')
 
-mainWindow.mainloop()
 print("Closing database connection")
+mainWindow.mainloop()
 
 conn.close()
