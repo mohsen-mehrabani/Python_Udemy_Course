@@ -33,7 +33,7 @@ class DataListBox(Scrollbar):
         if sort_order:
             self.sql_sort = " ORDER BY " + ','.join(sort_order)
         else:
-            self.sql_sort = " ORDER BY " + self.
+            self.sql_sort = " ORDER BY " + self.field
 
     def clear(self):
         self.delete(0, tkinter.END)
@@ -42,7 +42,6 @@ class DataListBox(Scrollbar):
         print(self.sql_select + self.sql_sort) #TODO delete this line
         self.cursor.execute(self.sql_select + self.sql_sort)
         # clear the ListBox contents before reloading
-
 
 
 def get_albums(event):
