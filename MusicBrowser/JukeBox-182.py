@@ -29,7 +29,7 @@ class DataListBox(Scrollbar):
         self.cursor = connection.cursor()
         self.table = table
         self.field = field
-        self.sql_select = "SELECT" + self.field + ", _id" + "FROM" + self.table
+        self.sql_select = "SELECT " + self.field + ", _id" + " FROM " + self.table
         if sort_order:
             self.sql_sort = " ORDER BY " + ','.join(sort_order)
         else:
@@ -39,9 +39,12 @@ class DataListBox(Scrollbar):
         self.delete(0, tkinter.END)
 
     def requery(self):
-        print(self.sql_select + self.sql_sort) #TODO delete this line
+        print(self.sql_select + self.sql_sort)      # TODO delete this line
         self.cursor.execute(self.sql_select + self.sql_sort)
         # clear the ListBox contents before reloading
+        self.clear()
+        for value in self.cursor:
+            self.insert(tkinter.END, value[0])
 
 
 def get_albums(event):
@@ -90,19 +93,21 @@ tkinter.Label(mainWindow, text='Albums').grid(row=0, column=1)
 tkinter.Label(mainWindow, text='Songs').grid(row=0, column=2)
 
 # =========Artists ListBox========
-artistList = Scrollbar(mainWindow)
+artistList = DataListBox(mainWindow, conn, "artists", "name")
 artistList.grid(row=1, column=0, sticky='nsew', rowspan=2, padx=(30, 0))
 artistList.config(border=2, relief='sunken')
 
-for artist in conn.execute("select artists.name from artists order by artists.name"):
-    artistList.insert(tkinter.END, artist[0])
+artistList.requery()
+# for artist in conn.execute("select artists.name from artists order by artists.name"):
+#     artistList.insert(tkinter.END, artist[0])
 
 artistList.bind('<<ListboxSelect>>', get_albums)
 
 # =========Albums ListBox========
 albumLV = tkinter.Variable(mainWindow)
 albumLV.set(('Choose an artist',))
-albumList = Scrollbar(mainWindow, listvariable=albumLV)
+albumList = DataListBox(mainWindow, conn, "albums", "name", sort_order=("name",))
+albumList.requery()
 albumList.grid(row=1, column=1, sticky='nsew', padx=(30, 0))
 albumList.config(border=2, relief='sunken')
 
@@ -111,7 +116,8 @@ albumList.bind('<<ListboxSelect>>', get_songs)
 # ========Songs ListBox==========
 songLV = tkinter.Variable(mainWindow)
 songLV.set(('Choose an album',))
-songsList = Scrollbar(mainWindow, listvariable=songLV)
+songsList = DataListBox(mainWindow, conn, "songs", "title", ("track", "title"))
+songsList.requery()
 songsList.grid(row=1, column=2, sticky='nsew', padx=(30, 0))
 songsList.config(border=2, relief='sunken')
 
