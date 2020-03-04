@@ -98,8 +98,6 @@ artistList.grid(row=1, column=0, sticky='nsew', rowspan=2, padx=(30, 0))
 artistList.config(border=2, relief='sunken')
 
 artistList.requery()
-# for artist in conn.execute("select artists.name from artists order by artists.name"):
-#     artistList.insert(tkinter.END, artist[0])
 
 artistList.bind('<<ListboxSelect>>', get_albums)
 
