@@ -1,5 +1,5 @@
 import sqlite3
-
+import pdb
 try:
     import tkinter
 except ImportError:  # python2
@@ -52,19 +52,21 @@ class DataListBox(Scrollbar):
         for value in self.cursor:
             self.insert(tkinter.END, value[0])
 
+    def on_select(self, event):
+        print(self is event.widget)     # TODO Delete this message
+        index = self.curselection()[0]
+        value = self.get(index),
 
-def get_albums(event):
-    lb = event.widget
-    index = lb.curselection()[0]
-    artist_name = lb.get(index),
+        # get the artist ID from the database row
+        link_id = conn.execute(self.sql_select + " WHERE " + self.field + "=?", value).fetchone()[1]
+        albumList.requery(link_id)
 
-    # get the artist ID from the database row
-    artist_id = conn.execute("SELECT artists._id FROM artists WHERE artists.name = ?", artist_name).fetchone()
-    alist = []
-    for row in conn.execute("SELECT albums.name FROM albums WHERE albums.artist = ? ORDER BY albums.name", artist_id):
-        alist.append(row[0])
-    albumLV.set(tuple(alist))
-    songLV.set(("Choose an album",))
+        # artist_id = conn.execute("SELECT artists._id FROM artists WHERE artists.name = ?", artist_name).fetchone()
+        # alist = []
+        # for row in conn.execute("SELECT albums.name FROM albums WHERE albums.artist = ? ORDER BY albums.name", artist_id):
+        #     alist.append(row[0])
+        # albumLV.set(tuple(alist))
+        # songLV.set(("Choose an album",))
 
 
 def get_songs(event):
@@ -107,7 +109,7 @@ artistList.requery()
 # for artist in conn.execute("select artists.name from artists order by artists.name"):
 #     artistList.insert(tkinter.END, artist[0])
 
-artistList.bind('<<ListboxSelect>>', get_albums)
+artistList.bind('<<ListboxSelect>>', artistList.on_select)
 
 # =========Albums ListBox========
 albumLV = tkinter.Variable(mainWindow)
