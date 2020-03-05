@@ -1,5 +1,5 @@
 import sqlite3
-import pdb
+
 try:
     import tkinter
 except ImportError:  # python2
