@@ -26,6 +26,8 @@ class DataListBox(Scrollbar):
         super().__init__(windows, **kwargs)
         self.linked_box = None
         self.link_field = None
+        self.link_value = None
+
         self.cursor = connection.cursor()
         self.table = table
         self.field = field
@@ -44,6 +46,7 @@ class DataListBox(Scrollbar):
         widget.link_field = link_field
 
     def requery(self, link_value=None):
+        self.link_value = link_value        # store the id, so we know the "master" record we're populated from
         if link_value and self.link_field:
             sql = self.sql_select + " WHERE " + self.link_field + "=?" + self.sql_sort
             print(sql)          # TODO delete this line
@@ -67,7 +70,14 @@ class DataListBox(Scrollbar):
             value = self.get(index),
 
             # get the artist ID from the database row
-            link_id = self.cursor.execute(self.sql_select + " WHERE " + self.field + "=?", value).fetchone()[1]
+            # make sure that we're getting the correct one, by including the link_value if appropriate
+            if self.link_value:
+                value = value[0], self.link_value
+                sql_where = " WHERE " + self.field + "=? AND " + self.link_field + "=?"
+            else:
+                sql_where = " WHERE " + self.field + "=?"
+
+            link_id = self.cursor.execute(self.sql_select + sql_where, value).fetchone()[1]
             self.linked_box.requery(link_id)
 
 
@@ -121,3 +131,12 @@ if __name__ == '__main__':
     mainWindow.mainloop()
 
     conn.close()
+
+# SQL query for finding albums' name duplicates
+# select albums.name, COUNT(albums.name) as num_albums from albums group by albums.name having num_albums >1
+# SQL query for finding all albums' name duplicates along with artists ID and name
+# select  artists._id, artists.name, albums.name from  artists
+# inner join albums on albums.artist = artists._id
+# where albums.name in
+# (select albums.name from albums group by albums.name having COUNT(albums.name) >1)
+# order by albums.name, artists.name
