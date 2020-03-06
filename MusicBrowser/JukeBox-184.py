@@ -12,7 +12,7 @@ class Scrollbar(tkinter.Listbox):
         super().__init__(windows, **kwargs)
         self.scrollbar = tkinter.Scrollbar(windows, orient=tkinter.VERTICAL, command=self.yview)
 
-    def grid(self, row, column, sticky='nse', rowspan=1, columnspan=1, **kwargs):
+    def grid(self, row, column, sticky='nsw', rowspan=1, columnspan=1, **kwargs):
         # tkinter.Listbox.grid(row=row, column=column, sticky=sticky, rowspan=rowspan,
         # columnspan=columnspan, **kwargs)  # for Python 2
         super().grid(row=row, column=column, sticky=sticky, rowspan=rowspan, columnspan=columnspan, **kwargs)
