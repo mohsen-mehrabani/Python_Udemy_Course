@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="213d1b5d-644c-4823-b728-32373b5bc76a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Music" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Music" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Music" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Music" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PATH_TO_GIT" value="https://github.com/mohsen-mehrabani/test.git" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="4055ce31-c2b4-483f-a74d-91fd7049558f" />
+  </component>
+  <component name="ProjectId" id="1Y5QNnOIVRK6jWwi7H7GYXphimE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RunManager" selected="Python.JukeBox">
+    <configuration name="JukeBox" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MusicBrowser" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/JukeBox.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="star_args" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MusicBrowser" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/star_args.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.JukeBox" />
+        <item itemvalue="Python.star_args" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="213d1b5d-644c-4823-b728-32373b5bc76a" name="Default Changelist" comment="" />
+      <created>1582229937214</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582229937214</updated>
+      <workItem from="1582229941357" duration="2140000" />
+      <workItem from="1582233485788" duration="962000" />
+      <workItem from="1582272199742" duration="1189000" />
+      <workItem from="1582275176166" duration="8721000" />
+      <workItem from="1582317386912" duration="1772000" />
+      <workItem from="1582487934993" duration="2922000" />
+      <workItem from="1582659417739" duration="4850000" />
+      <workItem from="1582795905959" duration="167000" />
+      <workItem from="1582798391766" duration="1574000" />
+      <workItem from="1582800452504" duration="10000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="278" y="59" width="800" height="684" key="#Notifications" timestamp="1582798986589">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="278" y="59" width="800" height="684" key="#Notifications/0.27.1366.741@0.27.1366.741" timestamp="1582798986589" />
+    <state x="277" y="27" width="802" height="686" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582233831558">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="277" y="27" width="802" height="686" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.741@0.27.1366.741" timestamp="1582233831558" />
+    <state x="359" y="169" width="638" height="399" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582319281338">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="359" y="169" width="638" height="399" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1366.741@0.27.1366.741" timestamp="1582319281338" />
+    <state x="365" y="92" width="626" height="553" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1582233493236">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="365" y="92" width="626" height="553" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.27.1366.741@0.27.1366.741" timestamp="1582233493236" />
+    <state x="415" y="113" width="526" height="511" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582319366337">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="415" y="113" width="526" height="511" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1366.741@0.27.1366.741" timestamp="1582319366337" />
+    <state x="460" y="127" width="447" height="500" key="FileChooserDialogImpl" timestamp="1582799473629">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="460" y="127" width="447" height="500" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1582799473629" />
+    <state x="521" y="292" width="314" height="217" key="Github.ShareDialog" timestamp="1582798654784">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="521" y="292" width="314" height="217" key="Github.ShareDialog/0.27.1366.741@0.27.1366.741" timestamp="1582798654784" />
+    <state width="1318" height="340" key="GridCell.Tab.0.bottom" timestamp="1582664036613">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1318" height="340" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1582664036613" />
+    <state width="1318" height="340" key="GridCell.Tab.0.center" timestamp="1582664036611">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1318" height="340" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1582664036611" />
+    <state width="1318" height="340" key="GridCell.Tab.0.left" timestamp="1582664036610">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1318" height="340" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1582664036610" />
+    <state width="1318" height="340" key="GridCell.Tab.0.right" timestamp="1582664036612">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1318" height="340" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1582664036612" />
+    <state width="1318" height="240" key="GridCell.Tab.1.bottom" timestamp="1582490862444">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1318" height="240" key="GridCell.Tab.1.bottom/0.27.1366.741@0.27.1366.741" timestamp="1582490862444" />
+    <state width="1318" height="240" key="GridCell.Tab.1.center" timestamp="1582490862444">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1318" height="240" key="GridCell.Tab.1.center/0.27.1366.741@0.27.1366.741" timestamp="1582490862444" />
+    <state width="1318" height="240" key="GridCell.Tab.1.left" timestamp="1582490862443">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1318" height="240" key="GridCell.Tab.1.left/0.27.1366.741@0.27.1366.741" timestamp="1582490862443" />
+    <state width="1318" height="240" key="GridCell.Tab.1.right" timestamp="1582490862444">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1318" height="240" key="GridCell.Tab.1.right/0.27.1366.741@0.27.1366.741" timestamp="1582490862444" />
+    <state x="171" y="27" width="1024" height="737" key="SettingsEditor" timestamp="1582799962046">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="171" y="27" width="1024" height="737" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1582799962046" />
+    <state x="337" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1582800452695">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="337" y="192" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1582800452695" />
+    <state x="424" y="88" width="526" height="626" key="svn.repositoryBrowser" timestamp="1582799455503">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="424" y="88" width="526" height="626" key="svn.repositoryBrowser/0.27.1366.741@0.27.1366.741" timestamp="1582799455503" />
+    <state x="467" y="301" width="422" height="200" key="svn.upgradeDialog" timestamp="1582799455620">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="467" y="301" width="422" height="200" key="svn.upgradeDialog/0.27.1366.741@0.27.1366.741" timestamp="1582799455620" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MusicBrowser$star_args.coverage" NAME="star_args Coverage Results" MODIFIED="1582660971337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MusicBrowser$JukeBox.coverage" NAME="JukeBox Coverage Results" MODIFIED="1582663990432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
